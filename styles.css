@@ -235,6 +235,15 @@ main {
   margin-bottom: 1em;
 }
 
+.nav{
+  position: fixed;
+  background-color: #fcfcfc;
+  width:100%;
+  top:0;
+  justify-content: center;
+  overflow:hidden;
+}
+
 .nav__list {
   margin-right: 1.5em;
   display: flex;
