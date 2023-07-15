@@ -1,433 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>🫀 hawa ali drammeh </title>
-  </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <a href="#nav" class="link"
-          >hd.</a
-        >
-      </h3>
-
-      <nav id="nav1" class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#research">academia</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#industry">industry</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#reviews">resume/statement reviews</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
-
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>yourname</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">hawa.</td>
+                <td id="navigation">
+                    <a href="#bio">about</a>
+                    <a href="#work">experience</a>
+                    <a href="">goals</a>
+                    <a href="">teaching</a>
+                    <a href="">pro bono</a>
+                    <a href="#contact">contact</a>
+                </td>
+            </tr>
+        </table>
     </header>
-
-    <main>
-
-      <section>
-      <!-- About -->
-      <div id="home"class="about center">
-
-        <h1>hi, I am <span class="about__name">hawa ali drammeh.</span></h1>
-        <h2 class="about__role">a student of knowledge</h2>
-
-        <div class="about__contact center">
-          <a href="https://drive.google.com/file/d/1EdE7gFqqI4ezrXqoW-vm7XA9P-DZhNy2/view?usp=share_link">
-            <span class="btn btn--outline">Resume</span>
-          </a>
-
-          <a
-            href="https://github.com/hawad416"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-
-          <a
-          href="https://www.youtube.com/@javawithhawa"
-          aria-label="github"
-          class="link link--icon"
-        >
-          <i aria-hidden="true" class="fab fa-youtube"></i>
-        </a>
-
-        <a
-        href="https://medium.com/@hawaalid"
-        aria-label="github"
-        class="link link--icon"
-      >
-        <i aria-hidden="true" class="fab fa-medium"></i>
-      </a>
-          <a
-            href="https://linkedin.com/in/hawadrammeh"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>uncovering myself and the world, one experience at a time ⚡️</h1>
+                <button class="btn_one">Hire Me</button><br>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social"><i class="fab fa-medium"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>experience</h1>
+      <h3> i have had the privilege of embarking on a unique and diverse path, traversing from customer service to software engineering, teaching, academic research, and even venturing into the realm of rocket science! this multifaceted journey has been an incredible source of experiential growth, shaping me into a well-rounded and adaptable professional. for more info on my specific roles, please see my resume or linkedin profile.<br> <br>side note: i feel old these days- my back is always in pain and my knees keep cracking. modern day 21 year olds. this is why you will see the OG logos down below 💾 </h3> 
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="https://blog.hubspot.com/hs-fs/hubfs/The%20Secret%20History%20of%20the%20Google%20Logo-7.jpeg?width=594&name=The%20Secret%20History%20of%20the%20Google%20Logo-7.jpeg">
+            <img onclick="magnify($(this).attr('src'))" src="https://www.versionmuseum.com/images/websites/microsoft-website/microsoft-logo-900x330.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="https://thinkmarketingmagazine.com/wp-content/uploads/2022/08/amazon222.png">
+            <img onclick="magnify($(this).attr('src'))" src="https://1000logos.net/wp-content/uploads/2022/05/Blue-Origin-Logo-2000.png">
+            <img onclick="magnify($(this).attr('src'))" src="http://lazowska.cs.washington.edu/allen-logo.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="https://www.logosvgpng.com/wp-content/uploads/2018/03/symetra-financial-corporation-logo-vector.png">
+            <img onclick="magnify($(this).attr('src'))" src="https://www.hatchwise.com/wp-content/uploads/2022/10/image-3.png.webp">
+            <img onclick="magnify($(this).attr('src'))" src="https://media.licdn.com/dms/image/C560BAQHQOdEDiti3vQ/company-logo_200_200/0/1605255591034?e=2147483647&v=beta&t=8oJuj4MZrDLPAqOoCt6W9Dd0AStylbHtvynv4xm57vU"
+            ">
         </div>
-
-        <p class="about__desc">
-          I am currently a third year computer science, mathematics, and biochemistry student at the University of Washington, with an intended graduation date of June 2024!
-          <br>
-          <br>
-          I am feuled by my passion for serving others, and continuously growing, whether that be learning about a new technology, or about new people and cultures! 
-          My true passion lies in teaching and spreading knowledge to others.
-          <br>
-          <br>
-
-          Most of my background has been in the Software Engineering Sector, where I have completed several internships. My managers and mentors from all of my internships have commended me on my ability to be coached, my ability 
-          to learn quickly, take ownership, dive deep into technical concepts, and my desire to grow within teams. 
-          <br>
-          <br>
-          Reflecting on all of my experiences has led me more into more entreprenurial endeavors. Even though I had a great time at these big tech companies and learned so much, I can't help but feel that I am
-          made for so much more! After taking CSE 390-R:Intro to Research, and CSE 490: Software Entreprenuership, I feel more excited about the potential career paths I can take in the research or entreprenurial space.
-          <br>
-          <br>
-
-          For this upcoming year, I am prioritizng computer science research experiences, medTech, venture capital, and startup opportunities, so please reach out if you have any opportunities!
+    </div>
+    <div id="bio">
+        <h1>about</h1>
+        <p>
+            🦋 سلام عليكم. (peace be upon you!) hi there! I'm Hawa, and I'm on a mission to make a meaningful impact in the world through the intersection of education, technology, and entrepreneurship.
+            As a third-year Computer Science student, I'm fueled by a genuine passion for creating positive change.
+             Inspired by my own journey as a first-generation Gambian student and the values instilled in me by my culture and religion, I'm committed to making a difference.
         </p>
-      </div>
-</section>
+        <p>
+            👩🏾‍💻 my experiences have shaped my path and purpose. 
+            as the founder of Tutors of the Smiling Coast, a nonprofit tutoring service, i've provided educational opportunities to students of all backgrounds, in hopes of empowering the next generation.
+            i'm also driven to explore the dynamic world of entrepreneurship & technology startups. i am the founder & president of  cseed @ the university of washington, where we are on a mission to increase
+            diversity within the entrepreneurial ecosystem. cseed is a technology entrepreneurship organization within the computer science & engineering department,
+            connecting students to founders, venture capitalists, & the startup ecosystem through curated panels, discussions, & events.
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-      <!-- Projects -->
-      <section id="research" class="section projects">
-        <h2 class="section__title">academia</h2>
-
-        <div class="projects__grid">
-          <div class="project">
-            <img src="plogo.jpeg"  height="85">
-            <h3>undergraduate research assistant </h3>
-          
-        
-          <p class="project__description" >
-            This Winter, I am working on a guided research project, "Reimagining the Labarotory Notebook" under Chris Thachuk in the Molecular Information Systems Lab at the Paul G. Allen School for Computer Science & Engineering.
-          </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Reactive Programming</li>
-              <li class="project__stack-item">Python</li>
-              <li class="project__stack-item">D3.js</li>
-              <li class="project__stack-item">Vega</li>
-              <li class="project__stack-item">DNA Computing</li>
-              <li class="project__stack-item">Chemistry</li>
-
-            </ul>
-
-            <a
-            href="https://misl.cs.washington.edu"
-            aria-label="live preview"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          </div>
-
-
-        </div>
-      </section>
-
-
-      <!-- Projects -->
-      <section id="industry" class="section projects">
-        <h2 class="section__title">industry</h2>
-
-        <div class="projects__grid">
-          <div class="project">
-            <img src="tlogo.png" width="100" height="74">
-            <h3>founder </h3>
-            <p class="project__description">
-              Founder of Tutors of the Smiling Coast, a nonprofit dedicated to spreading STEM education
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Leadership</li>
-              <li class="project__stack-item">Teaching</li>
-              <li class="project__stack-item">Mentorship</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <img src="blogo.png" width="74" height="74">
-            <h3>avionics software engineer intern </h3>
-            <p class="project__description">
-              This Winter, I will be working on the New Glenn heavy-lift orbital launch vehicle. 
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Avionics</li>
-              <li class="project__stack-item">Software</li>
-              <li class="project__stack-item">Systems</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <img src="alogo.png" width="74" height="74">
-            <h3>software development engineer intern </h3>
-            <p class="project__description">
-             From June 2022-September 2022. I worked under the Amazon Prime Video Org, working on Amazon Freevee and creating mobile customer experiences for millions of users.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Mobile Development</li>
-              <li class="project__stack-item">Swift</li>
-              <li class="project__stack-item">React Native</li>
-              <li class="project__stack-item">System Design</li>
-            </ul>
-
-          </div>
-          <div class="project">
-            <img src="glogo.png" width="74" height="74">
-            <h3>software engineer intern</h3>
-            <p class="project__description">
-              From January 2022 - April 2022, I worked on creating a full stack application for an internal team called Bricks, on the Google Cloud Web Marketing team. My project was dedicated to simplifying the way 10,000+ google cloud web marketers market cloud products to the public. 
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Full Stack Development</li>
-              <li class="project__stack-item">Angular</li>
-              <li class="project__stack-item">Polymer</li>
-              <li class="project__stack-item">Java</li>
-              <li class="project__stack-item">System Design</li>
-
-            </ul>
-          </div>
-
-          <div class="project">
-            <img src="mlogo.png" width="74" height="74">
-            <h3>software engineer in test</h3>
-
-            <p class="project__description">
-           From April 2022 - June 2022, I worked on enhancing Microsoft Teams & ensuring quality. 
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Angular</li>
-              <li class="project__stack-item">React</li>
-              <li class="project__stack-item">Electron</li>
-              <li class="project__stack-item">Automation Testing</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <img src="slogo.png" width="74" height="74">
-            <h3>software engineer intern</h3>
-            <p class="project__description">
-              From June 2021-September 2021. I was on the Digital Customer Experience team, working to enhance the site and fix bugs!
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Angular</li>
-              <li class="project__stack-item">C#</li>
-              <li class="project__stack-item">CSS</li>
-            </ul>
-          </div>
-
-
-        </div>
-      </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">projects</h2>
-
-        <div class="projects__grid">
-          <div class="project">
-            <img src="mmlogo.png" width="160" height="100">
-            <h3>mindful mates: relationships made sustainable</h3>
-            <p class="project__description">
-              We help couples cultivate sustainable relationships by creating good check-in and conflict response habits!
-
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">HCI</li>
-              <li class="project__stack-item">Design Research</li>
-              <li class="project__stack-item">Figma</li>
-            </ul>
-            <a
-              href="https://medium.com/@hawaalid/mindfulmates-relationships-made-sustainable-a9085fa8aabf"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <img src="hlogo.png" width="160" height="80">
-            <h3>hirEd: bridging the gap between gen z & skilled trade</h3>
-            <p class="project__description">
-              We connect bright students to top skilled trade companies by integrating simple, curated, & specialized learning paths into their high school programs.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Software Entreprenuership</li>
-              <li class="project__stack-item">Business Theory</li>
-              <li class="project__stack-item">User Research</li>
-            </ul>
-            <a
-              href="https://www.canva.com/design/DAFRVSfFw1s/a-mtsd5udc7Za-Me_IHQuw/view?utm_content=DAFRVSfFw1s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">Leadership</li>
-          <li class="skills__list-item btn btn--plain">Team Building</li>
-          <li class="skills__list-item btn btn--plain">Growth Mindset</li>
-          <li class="skills__list-item btn btn--plain">Empathetic</li>
-          <li class="skills__list-item btn btn--plain">Dilligent</li>
-          <li class="skills__list-item btn btn--plain">HTML</li>
-          <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">SCSS</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">TypeScript</li>
-          <li class="skills__list-item btn btn--plain">React</li>
-          <li class="skills__list-item btn btn--plain">Redux</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">Material UI</li>
-          <li class="skills__list-item btn btn--plain">Jest</li>
-          <li class="skills__list-item btn btn--plain">Enzyme</li>
-          <li class="skills__list-item btn btn--plain">Full-Stack Development</li>
-          <li class="skills__list-item btn btn--plain">Front End Development</li>
-          <li class="skills__list-item btn btn--plain">Back-End Development</li>
-          <li class="skills__list-item btn btn--plain">CI/CD</li>
-          <li class="skills__list-item btn btn--plain">Swift</li>
-          <li class="skills__list-item btn btn--plain">Python</li>
-          <li class="skills__list-item btn btn--plain">React Native</li>
-          <li class="skills__list-item btn btn--plain">Polymer</li>
-          <li class="skills__list-item btn btn--plain">Angular</li>
-          <li class="skills__list-item btn btn--plain">Design</li>
-          <li class="skills__list-item btn btn--plain">Documentation</li>
-          <li class="skills__list-item btn btn--plain">Automation</li>
-          <li class="skills__list-item btn btn--plain">Testing</li>
-        </ul>
-      </section>
-
-
-      <br>
-
-      <section id="reviews" class="section center contact">
-
-        <h2>resume & personal statement reviews</h2>
-
-        <p class="about__desc" justify-content="center">
-          
-          <b>  EMAIL: HAWA4PROBONO@GMAIL.COM  </b>
-<br>
-
-        many students know me for reviewing personal statements, resumes, cover letters, and professional documents free of charge! 
-        there are currently many students in my backlog that I am slowly getting to.
-        if you would like edits and reviews please complete the following steps: <br><br>
-          
- 
-
-     
-          • email me with @hawa4probono@gmail.com a subject of: {TODAYS_DATE}, {FULL NAME}, {DOCUMENT} REVIEW  . for example: "12/3/2022, Hawa Drammeh, Resume Review  " <br><br>
-          • explain any relevant information that will help me out with my edits (links, prompts, deadlines, etc)<br><br>
-          • attach a  <b>GOOGLE DOC LINK </b> to your documents and any prompts (please make sure I have comment and edit access)<br><br>
-          • sometimes emails go to spam so please follow up if I don't reply within two weeks<br>
-  
-        <br>
-        for more technical documents, I will usually ask you to set up a calendly call with me 
-        so I can get more information to make the best possible revisions!
         </p>
 
-      </section>
+        <p>
+            🌳 outside of my academic pursuits, you'll often find me engaging in thought-provoking conversations with strangers, exploring the beauty of nature through walks, laughing (way too much lol!), resting, and hanging out with friends & family.
+             i am on a continuous journey of finding a balance between achievement and self-care, and I encourage others to do the same.
+        </p>
+        <h3 id="trans">🌪 transparency notice:</h3> 
+        <p>
+            to my fellow students & friends, 
+            i want to address something that we often encounter when browsing 
+            profiles and experiences of others—it's easy to feel inadequate, 
+            as if we're falling behind or lacking in some way. we may even wonder
+             why it seems like others have it all figured out. 
+             but I want to assure you that each of us is on our own distinct path,
+             and there is no concept of being behind or ahead. we are exactly where we are meant to be.
 
-      <!-- Contact -->
-      <section class="section about center">
-        <h2 class="section__title">Contact</h2>
-        <a href="https://calendly.com/hawaali/30min?month=2022-12">
-          <span class="btn btn--outline">Set up a Calendly Meeting with Me</span>
-        </a>
-        <br>
-        <a href="mailto:hawad416@gmail.com">
-          <span class="btn btn--outline">Email me</span>
-        </a>
-      </section>
+            we all have our own unique journey, filled with challenges, sacrifices, and unexpected turns. 
+            it's crucial to believe in yourself and stay committed to your goals. 
+            in the age of social media and polished profiles, it's tempting to believe that others have perfect lives. 
+            
+            I want to be fully transparent and let you know that I have faced my fair share of difficulties and setbacks. 
+            i've experienced significant personal challenges, financial challenges, have burnout sevaral times to the point where I had to take time away from school, 
+            and my academic performance has suffered as a result.
 
+            these are the parts of our journeys that often go unspoken, but it's important to remember that we are not alone. 
+            I encourage you to prioritize self-care, seek support when needed. let's create a community where we uplift one another and openly acknowledge the challenges we face.
 
-    </main>
-
-    <footer class="footer">
-      Hawa Drammeh, 2022
-    </footer>
-
-    <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
+remember, you are capable, resilient, and deserving of success. embrace your journey, take care of yourself, and know that your time will come!!
+        </p>
     </div>
+    <div id="contact">
+        <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +1 234 567 8910</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; yourname@email.com</td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fas fa-fax"></i> &nbsp; +1 234 567 8910</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Street 123,<br>
+                                        blah blah city,<br>
+                                        blah blah country
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social"><i class="fab fa-facebook"></i></a>
+                                        <a class="social"><i class="fab fa-twitter"></i></a>
+                                        <a class="social"><i class="fab fa-instagram"></i></a>
+                                        <a class="social"><i class="fab fa-dribbble"></i></a>
+                                        <a class="social"><i class="fab fa-medium"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="your message" required rows="5"></textarea><br>
+                            <button class="btn_one">send</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
     </div>
-
-    <script src="./script.js"></script>
-  </body>
+    <div id="footer">
+        made on earth by a human <br> <a href="https://imfunniee.github.io">imfunniee</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
 </html>
